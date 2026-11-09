@@ -1,0 +1,21 @@
+assets/style.css
+  s_e959ec59f86537::t_fa53d13febcb5e 253,713
+index.html
+  s_e959ec59f86537::t_d195cf1f53a449 56-57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "389997303142fd0ba60f086f71fcec6207e1b77f",
+  "prompts": {},
+  "sessions": {
+    "s_e959ec59f86537": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a11f40-348d-7ae1-87a4-d6c766787eb9",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Fifthky <1309116306@qq.com>"
+    }
+  }
+}
