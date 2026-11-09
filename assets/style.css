@@ -818,18 +818,13 @@ html[data-theme='dark'] .school-wordmark img {
 .publication-toggle::-webkit-details-marker {
   display:none;
 }
-.disclosure-triangle {
-  width:14px;
-  height:14px;
+.disclosure-icon {
+  width:18px;
+  height:18px;
+  flex-shrink:0;
   transition:transform 240ms ease;
 }
-.disclosure-bar {
-  width:20px;
-  height:4px;
-  border-radius:2px;
-  background:currentColor;
-}
-.publication-disclosure[open] .disclosure-triangle {
+.publication-disclosure[open] .disclosure-icon {
   transform:rotate(90deg);
 }
 .when-expanded,.publication-disclosure[open] .when-collapsed {
