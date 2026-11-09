@@ -68,5 +68,6 @@
   }, { passive: true });
   window.addEventListener('resize', updateNavigation);
   window.addEventListener('hashchange', updateNavigation);
+  document.querySelector('.publication-disclosure').addEventListener('toggle', updateNavigation);
   updateNavigation();
 })();

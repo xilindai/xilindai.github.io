@@ -738,6 +738,106 @@ html[data-theme='dark'] .school-wordmark img {
   border-top:1px solid var(--line);
   padding-top:28px;
 }
+.news-panel {
+  margin-top:32px;
+  padding:20px 24px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--tint);
+}
+.news-panel h2 {
+  margin:0 0 12px;
+  font-size:var(--type-subtitle);
+  font-weight:600;
+  line-height:1.4;
+}
+.news-scroll {
+  max-height:17rem;
+  overflow-y:auto;
+  scrollbar-gutter:stable;
+  scrollbar-width:thin;
+  scrollbar-color:var(--accent) transparent;
+}
+.news-scroll:focus-visible,.publication-toggle:focus-visible {
+  outline:2px solid var(--accent);
+  outline-offset:4px;
+}
+.news-list {
+  list-style:none;
+  padding:0 12px 0 0;
+  margin:0;
+}
+.news-list li {
+  display:grid;
+  grid-template-columns:5.5rem minmax(0,1fr);
+  gap:14px;
+  padding:14px 0;
+  border-top:1px solid var(--line);
+}
+.news-list li:first-child {
+  border-top:0;
+  padding-top:0;
+}
+.news-list time {
+  font-size:var(--type-small);
+  color:var(--secondary);
+  padding-top:2px;
+}
+.news-list p {
+  margin:0;
+  color:var(--secondary);
+  line-height:1.7;
+  overflow-wrap:anywhere;
+}
+.news-list a {
+  color:var(--accent);
+  text-decoration:underline;
+  text-underline-offset:3px;
+  text-decoration-thickness:1px;
+}
+.news-list a:hover {
+  text-decoration-thickness:2px;
+}
+.publication-toggle {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  width:fit-content;
+  min-height:44px;
+  padding:8px 14px;
+  margin-bottom:16px;
+  border:1px solid var(--line);
+  border-radius:5px;
+  background:var(--tint);
+  color:var(--accent);
+  font-size:var(--type-body);
+  font-weight:600;
+  cursor:pointer;
+  list-style:none;
+}
+.publication-toggle::-webkit-details-marker {
+  display:none;
+}
+.disclosure-triangle {
+  width:14px;
+  height:14px;
+  transition:transform 240ms ease;
+}
+.disclosure-bar {
+  width:20px;
+  height:4px;
+  border-radius:2px;
+  background:currentColor;
+}
+.publication-disclosure[open] .disclosure-triangle {
+  transform:rotate(90deg);
+}
+.when-expanded,.publication-disclosure[open] .when-collapsed {
+  display:none;
+}
+.publication-disclosure[open] .when-expanded {
+  display:inline;
+}
 
 @media(max-width:1150px) {
   .wrapper {
@@ -844,6 +944,16 @@ html[data-theme='dark'] .school-wordmark img {
   }
 }
 @media(max-width:650px) {
+  .news-panel {
+    padding:18px;
+  }
+  .news-list li {
+    grid-template-columns:minmax(0,1fr);
+    gap:4px;
+  }
+  .news-scroll {
+    max-height:18rem;
+  }
   html {
     scroll-padding-top:120px
   }
