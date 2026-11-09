@@ -16,4 +16,4 @@ Edit `index.html` for biography, education, publications, research experience, a
 
 ## Design
 
-Adapted from [Minimal Light](https://github.com/yaoyao-liu/minimal-light), distributed under CC0 1.0 Universal. The institutional marks identify their respective organizations.
+A responsive academic homepage with a profile sidebar, illustrated publications, education, research experience, and media coverage. Institutional marks identify their respective organizations.
